@@ -1,0 +1,58 @@
+/* Self-hosted webfonts — no third-party requests, no trackers.
+   Files live in public/fonts/ and are subset to Latin by Fontsource. */
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/manrope.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/manrope-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/manrope-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/fraunces.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/fraunces-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-500.woff2") format("woff2");
+}

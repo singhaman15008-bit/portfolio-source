@@ -1,0 +1,22 @@
+{
+  "name": "aman-singh-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Premium portfolio for Aman Singh — B.Tech CSE student, software, data and AI learner.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "oxlint src"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}

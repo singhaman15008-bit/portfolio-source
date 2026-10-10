@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Aman Singh — B.Tech CSE Student, Software, Data and AI Learner">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#D6B56D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="18%" r="70%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="92%" cy="86%" r="60%">
+      <stop offset="0%" stop-color="#D6B56D" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#D6B56D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#09090D"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="17" letter-spacing="4" fill="#6F6F80">
+    <text x="96" y="126">OPEN TO INTERNSHIP OPPORTUNITIES</text>
+  </g>
+  <rect x="96" y="146" width="64" height="1.5" fill="#8B5CF6" fill-opacity="0.6"/>
+
+  <text x="96" y="330" font-family="Georgia, 'Iowan Old Style', serif" font-size="118" font-weight="500" fill="#F5F5F7" letter-spacing="-4">Aman Singh</text>
+
+  <text x="96" y="404" font-family="'Manrope', system-ui, sans-serif" font-size="32" font-weight="600" fill="url(#accent)">
+    B.Tech CSE Student · Software, Data &amp; AI Learner
+  </text>
+
+  <text x="96" y="490" font-family="'Manrope', system-ui, sans-serif" font-size="23" font-weight="400" fill="#A9A9B8">
+    Uttar Pradesh Textile Technology Institute, Kanpur
+  </text>
+  <text x="96" y="526" font-family="'Manrope', system-ui, sans-serif" font-size="23" font-weight="400" fill="#8B8B9C">
+    Projects in software development, web, data analytics and machine learning
+  </text>
+
+  <g transform="translate(96, 566)">
+    <rect width="230" height="34" rx="17" fill="#8B5CF6" fill-opacity="0.12" stroke="#8B5CF6" stroke-opacity="0.45"/>
+    <text x="115" y="23" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" letter-spacing="2" fill="#A78BFA" >PLACEHOLDER OG IMAGE</text>
+  </g>
+</svg>

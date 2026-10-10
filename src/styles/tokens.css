@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Design tokens — Aman Singh portfolio
+   Edit values here to re-theme the whole site. Nothing else hardcodes colour.
+   ========================================================================== */
+
+:root {
+  /* --- Colour: surfaces -------------------------------------------------- */
+  --bg: #09090d;
+  --surface: #111119;
+  --surface-2: #16161f;
+  --surface-3: #1c1c27;
+
+  /* --- Colour: accents --------------------------------------------------- */
+  --accent: #8b5cf6;
+  --accent-soft: #a78bfa;
+  --accent-deep: #6d3fe0;
+  --gold: #d6b56d;
+
+  /* --- Colour: text ------------------------------------------------------ */
+  --text: #f5f5f7;
+  --text-muted: #a9a9b8; /* 7.0:1 on --bg */
+  --text-dim: #8b8b9c; /* 5.4:1 on --bg — still AA for body text */
+  --text-faint: #6f6f80; /* labels / decorative only, never body copy */
+
+  /* --- Colour: lines ----------------------------------------------------- */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --border-accent: rgba(139, 92, 246, 0.4);
+
+  /* --- Colour: effects --------------------------------------------------- */
+  --glow-accent: rgba(139, 92, 246, 0.28);
+  --glow-gold: rgba(214, 181, 109, 0.22);
+  --focus-ring: #a78bfa;
+
+  /* --- Typography -------------------------------------------------------- */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --step--1: clamp(0.78rem, 0.75rem + 0.15vw, 0.86rem);
+  --step-0: clamp(0.95rem, 0.9rem + 0.25vw, 1.06rem);
+  --step-1: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  --step-2: clamp(1.35rem, 1.15rem + 1vw, 1.85rem);
+  --step-3: clamp(1.7rem, 1.3rem + 2vw, 2.6rem);
+  --step-4: clamp(2.2rem, 1.5rem + 3.4vw, 4rem);
+  --step-5: clamp(2.7rem, 1.6rem + 5.4vw, 5.4rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.3;
+  --leading-body: 1.7;
+
+  /* --- Spacing scale ----------------------------------------------------- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  --shell: 1180px;
+  --shell-narrow: 880px;
+  --gutter: clamp(1.15rem, 4vw, 3rem);
+  --section-y: clamp(4.5rem, 9vw, 8rem);
+
+  /* --- Radii ------------------------------------------------------------- */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 26px;
+  --r-pill: 999px;
+
+  /* --- Shadows ----------------------------------------------------------- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 30px -18px rgba(0, 0, 0, 0.9);
+  --shadow-lg: 0 30px 70px -40px rgba(0, 0, 0, 1);
+  --shadow-accent: 0 20px 60px -32px var(--glow-accent);
+
+  /* --- Motion ------------------------------------------------------------ */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 520ms;
+
+  --z-header: 50;
+  --z-menu: 60;
+  --z-skip: 80;
+}

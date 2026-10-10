@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Global base: reset, typography defaults, accessibility primitives
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Offset for the sticky header when jumping to an anchor */
+  scroll-padding-top: 6rem;
+}
+
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* --- Focus: always visible, never removed -------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: var(--r-sm);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* --- Skip link ----------------------------------------------------------- */
+.skip-link {
+  position: fixed;
+  top: var(--sp-3);
+  left: var(--sp-3);
+  z-index: var(--z-skip);
+  transform: translateY(-160%);
+  padding: 0.7rem 1.1rem;
+  border-radius: var(--r-pill);
+  background: var(--accent);
+  color: #fff;
+  font-size: var(--step--1);
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--dur) var(--ease);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* --- Layout helpers ------------------------------------------------------ */
+.shell {
+  width: 100%;
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.shell-narrow {
+  width: 100%;
+  max-width: var(--shell-narrow);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section-y);
+  position: relative;
+}
+
+/* --- Screen-reader-only text --------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Reduced motion ------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- Selection ----------------------------------------------------------- */
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
