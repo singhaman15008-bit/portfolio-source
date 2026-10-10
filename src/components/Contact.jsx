@@ -73,6 +73,7 @@ export default function Contact() {
               More profiles will be added here once the URLs are confirmed — nothing is
               published on a guess.
             </p>
+            {/* Remove this note once every profile you want shown is listed above. */}
           </div>
         </div>
       </div>

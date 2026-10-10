@@ -74,7 +74,10 @@ export const profile = {
     phone: null,
   },
 
-  /** Professional profiles. Add LinkedIn once the real URL is confirmed. */
+  /**
+   * Professional profiles. Both URLs below are confirmed by the owner —
+   * never add a handle here that has not been verified.
+   */
   socials: [
     {
       label: "GitHub",
@@ -82,12 +85,12 @@ export const profile = {
       href: "https://github.com/singhaman15008-bit",
       icon: "github",
     },
-    // {
-    //   label: "LinkedIn",
-    //   handle: "your-handle",
-    //   href: "https://www.linkedin.com/in/your-handle",
-    //   icon: "linkedin",
-    // },
+    {
+      label: "LinkedIn",
+      handle: "aman-singh-79a1213b3",
+      href: "https://www.linkedin.com/in/aman-singh-79a1213b3",
+      icon: "linkedin",
+    },
   ],
 
   /** Site metadata (SEO). No production domain is claimed. */
