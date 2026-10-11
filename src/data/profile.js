@@ -98,9 +98,11 @@ export const profile = {
     title: "Aman Singh — B.Tech CSE Student | Software, Data & AI Portfolio",
     description:
       "Portfolio of Aman Singh, a B.Tech Computer Science & Engineering student at Uttar Pradesh Textile Technology Institute, Kanpur — projects in software development, web, data analytics and machine learning.",
-    ogImage: "/og-image.svg",
-    ogImageNote:
-      "Placeholder social-sharing image. Replace public/og-image.svg with a real 1200×630 PNG/JPG before sharing the link publicly, and update seo.ogImage.",
+    /**
+     * Social-sharing image, 1200×630.
+     * Regenerate with: node scripts/make-og-image.mjs
+     */
+    ogImage: "/og-image.png",
   },
 };
 

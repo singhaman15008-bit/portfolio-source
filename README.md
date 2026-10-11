@@ -129,17 +129,21 @@ These are deliberate, please keep them:
 
 The build output in `dist/` is static — upload it to any static host (GitHub Pages,
 Netlify, Vercel, Cloudflare Pages). Before sharing the link publicly, replace
-`public/og-image.svg` with a real 1200×630 PNG/JPG and update `seo.ogImage` in
-`src/data/profile.js`.
+`public/og-image.png` with a real 1200×630 image (or regenerate it with
+`node scripts/make-og-image.mjs`) and update `seo.ogImage` in
+`src/data/profile.js` if the filename changes.
 
 ---
 
 ## Before you publish: two things to check
 
 1. **Resume consistency.** The resume PDF and this site should tell the same story
-   (same year of study, same GitHub/LinkedIn handles). Re-check after any resume update.
-2. **LinkedIn.** Not currently listed because no verified URL was supplied. Add it to
-   `profile.socials` once confirmed.
+   (same year of study, same GitHub/LinkedIn handles). The resume currently lists
+   `github.com/amansingh` and `linkedin.com/in/amansingh`, which do not match the
+   handles published here — update the resume to match.
+2. **Social-sharing image.** `public/og-image.png` is generated and matches the site,
+   but check how it looks in a real link preview (WhatsApp, LinkedIn) before sharing
+   widely.
 
 ---
 
